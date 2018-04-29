@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/marginbasica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RA do aluno"
+                android:textAppearance="?android:textAppearanceMedium"
+
+                />
+
+            <EditText
+                android:id="@+id/edtRA"
+                style="@style/marginbasica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="RA do aluno"
+                android:inputType="number"
+                android:maxLength="9" />
+
+            <TextView
+                style="@style/marginbasica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nota Portfolio"
+                android:textAppearance="?android:textAppearanceMedium"
+
+                />
+
+            <EditText
+                android:id="@+id/edtPortfolio"
+                style="@style/marginbasica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nota Portfolio"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <TextView
+                style="@style/marginbasica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nota prova dissertativa"
+                android:textAppearance="?android:textAppearanceMedium"
+
+                />
+
+            <EditText
+                android:id="@+id/edtDissertativa"
+                style="@style/marginbasica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nota prova dissertativa"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <TextView
+                style="@style/marginbasica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nota Professor"
+                android:textAppearance="?android:textAppearanceMedium"
+
+                />
+
+            <EditText
+                android:id="@+id/edtProfessor"
+                style="@style/marginbasica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nota Professor"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <TextView
+                style="@style/marginbasica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nota prova eletronica"
+                android:textAppearance="?android:textAppearanceMedium"
+
+                />
+
+            <EditText
+                android:id="@+id/edtEletronica"
+                style="@style/marginbasica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nota prova eletronica"
+                android:inputType="number"
+                android:maxLength="2" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/calcular"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F4F4B9"
+        android:gravity="center"
+        android:text="Calcular"
+        android:textAppearance="?android:textAppearanceLarge" />
+</RelativeLayout>
